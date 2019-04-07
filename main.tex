@@ -16,6 +16,12 @@
 \section{Warm up}
 
 Lets modify the classic merge sort algorithm a little bit. What happens if instead of splitting the array in 2 parts we divide it in 3? You can assume that exists a three-way merge subroutine. What is the overall asymptotic running time of this algorithm?
+\\ \\
+$T(n)=T(n/3)+T(n/3)+T(n/3)+O(n)$ \\
+$T(n)=3T(n/3)+O(n)$
+\\
+$O( cn{log_3 (n)}+cn )$ \\
+$O(nlog_3 (n))$
 
 \emph{BONUS:} Implement the three-way merge sort algorithm.
 
@@ -25,7 +31,8 @@ Welcome to your first competitive programming problem!!!
 
 \begin{itemize}
     \item Sign-up in Uva Online Judge (\url{https://uva.onlinejudge.org}) and in CodeChef if you want (we will use it later).
-    \item Rest easy! This is not a contest, it is just an introductory problem. Your first problem is located in the ``Problems Section'' and is \textbf{100 - The 3n + 1 problem}.
+    \item Rest easy! This is not a contest, it is just an introductory problem. Your first problem is located in the ``Problems Section'' and is \textbf{100 - The 3n + 1 problem}.\\
+    File: p2.cpp
     
     \item Once that you finish with that problem continue with \textbf{458 - The Decoder}. Again, this problem is just to build your confidence in competitive programming.
     
@@ -41,9 +48,11 @@ Write a program to find the minimum input size for which the merge sort algorith
     \item Implement the insertion sort algorithm
     \item Implement the merge sort algorithm
     \item Just compare them? No !!! Run some simulations or tests and find the average input size for which the merge sort is an asymptotically ``better'' sorting algorithm.
+    \\
+    File: p3.cpp
 \end{itemize}
 
-Note: Include (.tex) and attach(.cpp) your source code and use a dockerfile to interact with python and plot your results.\\
+
 
 \emph{BONUS:} Compare both algorithms against any other sorting algorithm
 
@@ -74,11 +83,12 @@ Note: Include(.tex) and attach(.cpp) your source code, of course.\\
 Arrange the following functions in increasing order of growth rate with $g(n)$ following $f(n)$ if $f(n) = \mathcal{O}(g(n))$
 
 \begin{enumerate}
+    	\item $n^{2}$
     \item $n^{2}log(n)$
     \item $2^{n}$
-    \item $2^{2^{n}}$
     \item $n^{log(n)}$
-    \item $n^{2}$
+    \item $2^{2^{n}}$\\
+    \includegraphics[height=0.3\textheight]{img1.png}
 \end{enumerate}
 
 \end{document}
